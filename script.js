@@ -16,12 +16,19 @@ class Dog extends Animal {
 	bark(){
 		console.log("woof");
 	}
+	makeSound(){
+		console.log(this.species + " barks");
+	}
 }
 
 class Cat extends Animal {
 	purr(){
 		console.log("purr");
 	}
+	makeSound(){
+		console.log(this.species + " purrs");
+	}
+	
 }
 
 const myCat = new Cat("Siamese");
